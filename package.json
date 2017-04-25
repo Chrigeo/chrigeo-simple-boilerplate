@@ -1,0 +1,26 @@
+{
+  "name": "chrigeo-simple-boilerplate",
+  "version": "0.1.0",
+  "description": "Pug + Coffeescript + Sass boilerplate, with Grunt, made for simple websites",
+  "author": "Christopher Georget",
+  "license": "MIT",
+  "repository": "https://github.com/Chrigeo/chrigeo-simple-boilerplate.git",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-coffeelint": "0.0.16",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-express": "^1.4.1",
+    "grunt-parallel": "^0.5.1",
+    "grunt-puglint": "^1.0.0",
+    "grunt-sass-lint": "^0.2.2",
+    "pug": "^2.0.0-beta.12",
+    "pug-lint": "^2.4.0",
+    "pug-lint-config-clock": "^2.0.0"
+  }
+}
