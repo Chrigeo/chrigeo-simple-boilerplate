@@ -10,7 +10,7 @@ module.exports = (grunt) ->
       },
       pug: {
         options: { livereload: true },
-        files:['src/**.pug'],
+        files:['src/*.pug', 'src/pug/*.pug'],
         tasks:['pug']
       },
       sass: {
