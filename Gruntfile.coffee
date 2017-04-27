@@ -11,7 +11,7 @@ module.exports = (grunt) ->
       pug: {
         options: { livereload: true },
         files:['src/*.pug', 'src/pug/*.pug'],
-        tasks:['pug']
+        tasks:['puglint', 'pug']
       },
       sass: {
         options: { livereload: true },
@@ -46,9 +46,13 @@ module.exports = (grunt) ->
             debug: false
           }
         },
-        files: {
-          'dist/index.html': 'src/index.pug'
-        }
+        files: [{
+          cwd: "src/",
+          src: "*.pug",
+          dest: "dist",
+          expand: true,
+          ext: ".html"
+        }]
       }
     },
     uglify: {
@@ -62,7 +66,7 @@ module.exports = (grunt) ->
       }
     },
     puglint: {
-      src: ['src/**.pug']
+      src: ['src/*.pug', 'src/pug/*.pug']
     },
     sasslint: {
       target: ['src/sass/**']

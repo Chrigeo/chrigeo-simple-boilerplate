@@ -1,13 +1,6 @@
 doctype html
 html
-  head
-    title Chrigeo Simple Boilerplate
-    
-    meta(charset="utf-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-      
-    link(rel="stylesheet", type="text/css", href="vendor/bootstrap.min.css")
-    link(rel="stylesheet", type="text/css", href="styles/style.css")
+  include pug/_head
     
   body
     .container-fluid
@@ -15,8 +8,8 @@ html
         h1 Pug+Sass+CoffeeScript Simple Boilerplate
         img(class="img-responsive center-block yay", src="media/yay.png", alt="YAY")
         p You can begin to work in the src/ folder !
-      include pug/footer.pug
+        a(href="./about.html") Other page
+      include pug/_footer
 
     script(type="application/javascript", src="js/app.js")
-    script(type="application/javascript", src="vendor/jquery-3.2.1.min.js")
-    script(type="application/javascript", src="vendor/bootstrap.min.js")
+    
