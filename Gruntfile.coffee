@@ -22,6 +22,11 @@ module.exports = (grunt) ->
         options: { livereload: true },
         files:['src/media/**'],
         tasks:['clean:media', 'copy']
+      },
+      vendor: {
+        options: { livereload: true },
+        files:['src/vendor/**'],
+        tasks:['clean:vendor', 'copy']
       }
     },
     express:{
@@ -90,15 +95,25 @@ module.exports = (grunt) ->
     },
     clean: {
       all: ['./dist', './.sass-cache'],
-      media: ['./dist/media']
+      media: ['./dist/media'],
+      vendor: ['./dist/vendor']
     },
     copy: {
-      main: {
+      media: {
         files: [{
           expand: true,
           flatten: true,
           src: ['src/media/**'],
           dest: 'dist/media/',
+          filter: 'isFile'
+        }]
+      },
+      vendor: {
+        files: [{
+          expand: true,
+          flatten: true,
+          src: ['src/vendor/**'],
+          dest: 'dist/vendor/',
           filter: 'isFile'
         }]
       }
