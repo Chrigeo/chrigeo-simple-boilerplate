@@ -2,9 +2,8 @@
 
 > Pug + Coffeescript + Sass web project generator, with Grunt, made for simple websites.
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Chrigeo/chrigeo-simple-boilerplate.svg)](https://greenkeeper.io/)
-[![dependencies Status](https://david-dm.org/Chrigeo/chrigeo-simple-boilerplate/status.svg)](https://david-dm.org/Chrigeo/chrigeo-simple-boilerplate)
-[![devDependencies Status](https://david-dm.org/Chrigeo/chrigeo-simple-boilerplate/dev-status.svg)](https://david-dm.org/Chrigeo/chrigeo-simple-boilerplate?type=dev)
+[![dependencies Status](https://david-dm.org/Chrigeo/generator-pugcoffeesass/status.svg)](https://david-dm.org/Chrigeo/generator-pugcoffeesass)
+[![devDependencies Status](https://david-dm.org/Chrigeo/generator-pugcoffeesass/dev-status.svg)](https://david-dm.org/Chrigeo/generator-pugcoffeesass?type=dev)
 
 ## Getting Started
 
