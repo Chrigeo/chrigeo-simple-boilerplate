@@ -1,15 +1,16 @@
-# Chrigeo Simple Boilerplate
+# PugCoffeeSass Yeoman Generator
 
-> Pug + Coffeescript + Sass web project boilerplate, with Grunt, made for simple websites.
+> Pug + Coffeescript + Sass web project generator, with Grunt, made for simple websites.
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/Chrigeo/chrigeo-simple-boilerplate.svg)](https://greenkeeper.io/)
+[![dependencies Status](https://david-dm.org/Chrigeo/chrigeo-simple-boilerplate/status.svg)](https://david-dm.org/Chrigeo/chrigeo-simple-boilerplate)
 [![devDependencies Status](https://david-dm.org/Chrigeo/chrigeo-simple-boilerplate/dev-status.svg)](https://david-dm.org/Chrigeo/chrigeo-simple-boilerplate?type=dev)
 
 ## Getting Started
 
 ### Prerequisites
 
-This boilerplate requires [NodeJS](https://nodejs.org) and [Ruby](https://www.ruby-lang.org) to run its tools. You will need to install [Sass](http://sass-lang.com), a CSS extension language, with the following command:
+This generator requires [NodeJS](https://nodejs.org) to run its tools. The generated project requires [Ruby](https://www.ruby-lang.org) and [Sass](http://sass-lang.com), a CSS extension language, installed with the following command:
 
 ```cmd
 gem install sass
@@ -25,13 +26,13 @@ npm install -g grunt-cli
 
 Once all prerequisites are installed, it is easy to get up and running with this boilerplate.
 
-First, you'll need to clone this repository:
+First, you'll need to install [Yeoman](http://yeoman.io) and this generator:
 
 ```cmd
-git clone https://github.com/Chrigeo/chrigeo-simple-boilerplate.git
+npm install -g yo generator-pugcoffeesass
 ```
 
-Then, just install the dependencies:
+Then, run the following command:
 ```cmd
 npm install
 ```
@@ -72,6 +73,20 @@ You'll find the compiled files in the generated `dist/` folder.
   * [sass-lint](https://www.npmjs.com/package/sass-lint),
   * [CoffeeLint](http://www.coffeelint.org)
 * Development server, powered by [grunt-express](https://www.npmjs.com/package/grunt-express) and [grunt-contrib-watch](https://www.npmjs.com/package/grunt-contrib-watch)
+
+## Tests
+
+Testing this package requires [Mocha](http://mochajs.org) and [CoffeeScript](http://coffeescript.org):
+
+```cmd
+npm install -g mocha coffeescript
+```
+
+You can then run the tests with the following command:
+
+```cmd
+npm test
+```
 
 ## Authors
 
