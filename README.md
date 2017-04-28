@@ -34,7 +34,7 @@ npm install -g yo generator-pugcoffeesass
 
 Then, run the following command:
 ```cmd
-npm install
+yo pugcoffeesass
 ```
 
 And you are good to go!
